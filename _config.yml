@@ -48,7 +48,7 @@ linkedin_username: Binav Gautam
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Binav Gautam and im an MS in CS Student at The university of Texas at Dallas. I have experience working on React and Node.js projects, which I have worked on in both my past internships! I have also made several academic Machine Learning projects ranging from NLP to CV, mostly using Tensorflow. Currently, I am exploring the fields of Data Engineering, where I am learning to build ETL Pipelines and perform operations on data using PySpark and Snowflake, and am also exploring Cloud Computing, working and studying on Microsoft Azure.
+  Hi, my name's Binav Gautam and im an MS in CS Student at The university of Texas at Dallas. I have experience working on React and Node.js projects, which I have worked on in both my past internships! I have also made several academic Machine Learning projects ranging from NLP to CV, mostly using Tensorflow. Currently, I am exploring the fields of Data Engineering, where I am learning to build ETL Pipelines and perform operations on data using PySpark and Snowflake, and also Cloud Computing, where I am playing around with and studying Microsoft Azure.
 
 # I am most skilled in: <mark>AWS</mark> and <mark>Eating Pizza</mark>
 
@@ -57,60 +57,85 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: top-middle
-        title: Super awesome project
-        link: github.com/sproogen
+        title: Trending Topics in r/WorldNews
+        # link: github.com/
         # link_text: Project Website
-        additional_links:
-          - title: sproogen/modern-resume-theme
-            icon: fab fa-github
-            url: github.com/sproogen/modern-resume-theme
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
-        quote: >
-          This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+        # additional_links:
+        #   - title: trendingtopics
+        #     icon: fab fa-github
+        #     url: github.com/
+        # - title:  Github page for project 
+        #   icon: fab fa-github
+        #   url: Link to project 
         description: | # this will include new lines to allow paragraphs
-          I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+          I started this project as a way of learning Data Pipelines and working with streaming data.  I Implemented a data pipeline that extracts comments from a subreddit using the Reddit API and sends them to an Apache Kafka topic. PySpark is used to consume these comments from the topic, process and transform the data, and send the transformed data to another topic. Logstash consumes the transformed data from the topic and indexes it into Elasticsearch, where it is analyzed and visualized using Kibana. This setup allows for real-time processing, transformation, and visualization of Reddit comments, providing insights into discussion trends and patterns within the subreddit.
 
-  - title: Experience # Title for the section
-    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-middle
+        title: RNN Model from scratch
+        # link: github.com/
+        # link_text: Project Website
+        # additional_links:
+        #   - title: rnnproject
+        #     icon: fab fa-github
+        #     url: github.com/
+        # - title:  Github page for project 
+        #   icon: fab fa-github
+        #   url: Link to project 
+        description: | 
+          Developed and implemented a RNN model from scratch to predict Ethereum price movements using historical price data and trading volumes. Presented results showing RNN predictions closely follow actual price movements, with significant improvements in predictive performance through model tuning.    
+
+  - title: Experience 
+    layout: list 
     content:
       - layout: left
-        title: The Boring Company
-        link: boringcompany.com
+        title: Mehery SocCom
+        # link: boringcompany.com
         # link_text: boringcompany.com
-        sub_title: Senior Network System Administrator
-        caption: November 2017 - Present
-        quote: >
-          Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+        sub_title: Software Development Intern
+        caption: May 2022 - Aug 2022
+        description: | 
+          ◦ Developed JavaScript chatbots for customers using the Mehery portal, resulting in an 80% enhancement in customer
+            engagement.
+          ◦ Integrated Wit.AI into the platform connected through Node.JS API endpoints, enhancing functionality and improving
+          user experience by 95%.
+          ◦ Completed the development and implementation of the web-based Mehery Portal application into a mobile-based
+          Flutter application, completing 100% of Front End migration.
+
+    content:
+      - layout: left
+        title: Zasket
+        # link: boringcompany.com
+        # link_text: boringcompany.com
+        sub_title: Software Engineering Intern
+        caption: July 2021 - Aug 2022
         description: | # this will include new lines to allow paragraphs
-          Every company needs its networks properly administered and The Boring Compay is no exception. Digging holes is hard and I play my part making sure the whole company stays connected. I lead a team of 5 people and enjoy driving the company to try new technologies.
+          ◦ Achieved a projected 3% increase in the enhancement of the functionality of the web-based platform for the start-up
+          company, resulting in a 20% improvement in website performance and user experience.
+          ◦ Implemented new features and functionalities in the company, contributing to a 15% improvement in user engagement
+          and customer satisfaction.
+          ◦ Collaborated in creating Unit Tests for the application using Jest, as well as End to End Testing using Cypress,
+          reducing deployment time of new functionalities by almost 30%.
 
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: Harvard University
-        caption: 2010 - 2013
-        sub_title: BSc Computer Science
-        quote: >
-          Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+        title: The University of Texas at Dallas
+        caption: 2023 - 2025
+        sub_title: MSc in Computer Science
         description: | # this will include new lines to allow paragraphs
           During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
 
           I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
 
-  - title: A Little More About Me
+  - title: Some of my Skills
     layout: text
     content: | # this will include new lines to allow paragraphs
-      Alongside my interests in networks and software engineering some of my other interests and hobbies are:
-      - Rock climbing
-      - Gaming
-      - Knitting
-      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
-
-      Look at this cool image  
-      ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
+      - Web Development: React.js, Node.js, SQL Databases, MongoDB
+      - Data Engineering: Pyspark, Snowflake, Kafka, ELK
+      - Machine Learning: Tensorflow, Pandas, Numpy
+      - Cloud Computing: Microsoft Azure
 
 # Footer
 footer_show_references: true
